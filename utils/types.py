@@ -16,7 +16,28 @@ class NetworkConfig(TypedDict):
 
 class Config(TypedDict):
     networks: List[NetworkConfig]
+    sleepAfterTXSec: int
+    waitTimeSec: int
+    waitUntilSec: int
+    sniperBotNickname: str 
+    loggingChannelURI: str
+    tokenInfoBotNickname: str
+
 
 class Source(TypedDict):
     networks: List[NetworkName]
     whitelist: List[int]
+
+class TokenInfo(TypedDict):
+    mcap: str
+    network: str 
+    ca: str
+
+
+class State(Enum):
+    NOTHING = "NOTHING"
+    WAITING_FOR_TOKEN_INFO = "WAITING_FOR_TOKEN_INFO"
+    WAITING_FOR_TOKEN_BUY = "WAITING_FOR_TOKEN_BUY"
+
+class GlobalVariables(TypedDict):
+    state: State

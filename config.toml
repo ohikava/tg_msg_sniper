@@ -1,0 +1,12 @@
+sleepAfterTXSec = 5
+waitTimeSec = 5
+waitUntilSec = 60
+sniperBotNickname = "@achilles_trojanbot"
+tokenInfoBotNickname = "@RickBurpBot"
+loggingChannelURI = "https://t.me/+pcLW-e2eHhQ2MGUy"
+[[networks]]
+network = "Solana"
+channels_urls = ["@LIT_AI_Pump_Fun_Pre_Raydium", "@sadlfsadf"]
+chat_urls = []
+tg_bots = ["@achilles_trojanbot"]
+
